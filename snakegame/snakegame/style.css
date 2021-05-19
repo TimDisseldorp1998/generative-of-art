@@ -1,0 +1,65 @@
+/* You don't really have to touch this style.css file. Most of the styling of the canvas is controlled via the sketch.js */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tekst {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.counter {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 760px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+}
+
+/* pak de h1 die als parent de class "counter" heeft*/
+.counter>h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gameover {
+  position: absolute;
+  text-align: center;
+  border-radius: 8px;
+  left: 480px;
+  top: 325px;
+  background-color: whitesmoke;
+  width: 300px;
+  height: 200px;
+  display: none; /* display none zodat het gameover scorebord niet in beeld staat als het spel bezig is*/
+}
+
+.gameover>h2 {
+  margin-top: 50px;
+}
+
+.restartbtn {
+  border: none;
+  color: white;
+  border-radius: 8px;
+  background-color: #CB4C4E;
+  padding: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* deze class kan via js toegevoegd worden om het gameover scherm te laten zien, wanneer je de game verliest*/
+.gamerestart {
+  display: block;
+}
